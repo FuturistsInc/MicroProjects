@@ -23,16 +23,13 @@ public partial class _Default : System.Web.UI.Page
             if (Cls_Email.Chp51b_SaveFullMessage(msg,Cls_Email.GetNextEmailFileName()) == "Success")
             {
                 Cls_Email.IncrementEmailNumberinSettings();
-            }
-           // str_FileName = 
-            //System.Diagnostics.Debug.Print(msg.Headers.Subject);
-            //System.Diagnostics.Debug.Print(Chp51d_GetTextInMessage(msg));
-            //Chp51e_GetAttachmentInMessage(msg);
+                p_Status.InnerText = "Saving email successful";
+            }           
         }
     }
     protected void btn_Test_Click(object sender, EventArgs e)
     {
-        p_Status.InnerText = Cls_Email.GetNextEmailFileName();
+        p_Status.InnerText = "1.43pm";
             
     }
 
