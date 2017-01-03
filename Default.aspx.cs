@@ -11,4 +11,8 @@ public partial class _Default : System.Web.UI.Page
     {
         p_Status.InnerText = "This is a start";
     }
+    protected void btn_Test_Click(object sender, EventArgs e)
+    {
+        p_Status.InnerText = "Test activated";
+    }
 }
